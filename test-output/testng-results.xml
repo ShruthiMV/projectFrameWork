@@ -2,12 +2,6 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[The Test Suite started at :24-06-2020 11-42-33]]>
-    </line>
-    <line>
-      <![CDATA[The Test Case: tc_02 Started At :24-06-2020 11-42-41]]>
-    </line>
-    <line>
       <![CDATA[Entered text " anuj.lpu1@gmail.com"In the Username Textbox]]>
     </line>
     <line>
@@ -16,31 +10,25 @@
     <line>
       <![CDATA[Clicked on Login Btn]]>
     </line>
-    <line>
-      <![CDATA[The Test Case: tc_02 Completed At  :24-06-2020 11-42-45]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="11621" started-at="2020-06-24T23:42:33 IST" finished-at="2020-06-24T23:42:45 IST">
+  <suite name="Default suite" duration-ms="25106" started-at="2020-06-25T17:12:29 IST" finished-at="2020-06-25T17:12:54 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="11621" started-at="2020-06-24T23:42:33 IST" finished-at="2020-06-24T23:42:45 IST">
+    <test name="Default test" duration-ms="25106" started-at="2020-06-25T17:12:29 IST" finished-at="2020-06-25T17:12:54 IST">
       <class name="com.tyss.projectframeworkscripts.LoginTest">
-        <test-method status="PASS" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.tyss.projectframeworkscripts.LoginTest@4e7dc304]" name="setUp" is-config="true" duration-ms="8035" started-at="2020-06-24T23:42:33 IST" finished-at="2020-06-24T23:42:41 IST">
+        <test-method status="PASS" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.tyss.projectframeworkscripts.LoginTest@2d6eabae]" name="setUp" is-config="true" duration-ms="7937" started-at="2020-06-25T17:12:29 IST" finished-at="2020-06-25T17:12:37 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6821ea29]]>
+                <![CDATA[org.testng.TestRunner@5827af16]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tc_02()[pri:0, instance:com.tyss.projectframeworkscripts.LoginTest@4e7dc304]" name="tc_02" duration-ms="3478" started-at="2020-06-24T23:42:41 IST" finished-at="2020-06-24T23:42:45 IST">
+        <test-method status="PASS" signature="tc_02()[pri:0, instance:com.tyss.projectframeworkscripts.LoginTest@2d6eabae]" name="tc_02" duration-ms="17094" started-at="2020-06-25T17:12:37 IST" finished-at="2020-06-25T17:12:54 IST">
           <reporter-output>
-            <line>
-              <![CDATA[The Test Case: tc_02 Started At :24-06-2020 11-42-41]]>
-            </line>
             <line>
               <![CDATA[Entered text " anuj.lpu1@gmail.com"In the Username Textbox]]>
             </line>
@@ -50,16 +38,13 @@
             <line>
               <![CDATA[Clicked on Login Btn]]>
             </line>
-            <line>
-              <![CDATA[The Test Case: tc_02 Completed At  :24-06-2020 11-42-45]]>
-            </line>
           </reporter-output>
         </test-method> <!-- tc_02 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tyss.projectframeworkscripts.LoginTest@4e7dc304]" name="tearDown" is-config="true" duration-ms="55" started-at="2020-06-24T23:42:45 IST" finished-at="2020-06-24T23:42:45 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tyss.projectframeworkscripts.LoginTest@2d6eabae]" name="tearDown" is-config="true" duration-ms="42" started-at="2020-06-25T17:12:54 IST" finished-at="2020-06-25T17:12:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tyss.projectframeworkscripts.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

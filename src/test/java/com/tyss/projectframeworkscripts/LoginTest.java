@@ -11,6 +11,7 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.sl.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,11 +21,13 @@ import org.testng.annotations.Test;
 import com.tyss.projectframework.init.IConstants;
 import com.tyss.projectframework.lib.BaseLib;
 import com.tyss.projectframework.lib.ExcelLib;
+import com.tyss.projectframework.lib.GenericLib;
+import com.tyss.projectframework.pages.BooksListPage;
 import com.tyss.projectframework.pages.HomePage;
 import com.tyss.projectframework.pages.MyCartPage;
 import com.tyss.projectframework.pages.SignInPage;
 
-public class LoginTest extends BaseLib {
+public class LoginTest extends BaseLib  {
 	
 	
 	
@@ -55,10 +58,31 @@ public class LoginTest extends BaseLib {
 		String pw=ExcelLib.getData("Sheet1", 1, 2, IConstants.dataExcelPath);
 		sip.doLogin(un,pw);	
 		MyCartPage mcp=new MyCartPage(driver);
-		
-
 		Assert.assertTrue(mcp.getWelcomeName().contains(ExcelLib.getData("Sheet1", 1, 3, IConstants.ExpectedExcelData)));
-		Thread.sleep(2000);
+		Thread.sleep(3000);
+		hp.BooksClick();
+		System.out.println(driver.findElement(By.xpath("//img[@class='img-responsive']")).isDisplayed());
+		
+		BooksListPage blp=new BooksListPage(driver);
+		blp.booksBtnClick();
+		Thread.sleep(3000);
+		Alert alt=driver.switchTo().alert();
+		alt.accept();
+		Thread.sleep(3000);
+
+		//GenericLib.scrollBy(driver, 2, 250);
+		
+	//	int y=driver.findElement(By.xpath("//button[contains(text(),'PROCCED TO CHEKOUT')]"));
+	
+		blp.booksCheckbxClick();
+		Thread.sleep(3000);		
+		
+		blp.proceedChkOut();
+		Thread.sleep(3000);		
+
+		//GenericLib.scrollBy(driver, 0, 250);
+		
+		
 		
 	}
 }	

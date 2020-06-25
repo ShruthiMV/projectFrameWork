@@ -20,6 +20,9 @@ public class HomePage {
 	@FindBy(name="serach")
 	private WebElement searchBtn;
 	
+	@FindBy(xpath="//ul[@class='nav navbar-nav']//li[@class='dropdown yamm'][1]")
+	private WebElement booksBtn;
+	
 	public HomePage(WebDriver driver) {
 		
 		this.driver=driver;
@@ -33,7 +36,10 @@ public class HomePage {
 		
 	}
 	
+	public void BooksClick() {
+	 booksBtn.click();
 	
-	
-	
+   
+	}
+
 }

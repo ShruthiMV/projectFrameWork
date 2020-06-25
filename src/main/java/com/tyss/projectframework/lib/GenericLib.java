@@ -9,6 +9,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Properties;
 import java.util.concurrent.TimeoutException;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -80,7 +81,19 @@ public static void saveScreenShot(WebDriver driver,String fileName) {
 	// TODO Auto-generated catch block
 	e.printStackTrace();
 }
- 
-}
+ }
+
+public static void scrollBy(WebDriver driver,int x,int y) throws InterruptedException {
+
+
+	JavascriptExecutor jse = (JavascriptExecutor)driver;
+	Thread.sleep(3000);
+	x=2;
+	y=250;
+	jse.executeScript("window.scrollBy(x,y)");
+
+
+    }
+
 
 }
