@@ -42,9 +42,7 @@ public class MyListener implements ITestListener{
    public void onTestSkipped(ITestResult result) {
    
    
-   
-   
-  }
+     }
    
    
    public void onStart(ITestContext context) {
